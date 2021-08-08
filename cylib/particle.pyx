@@ -5,6 +5,6 @@ cdef class Point:
         self.x = x
         self.y = y
 
-cpdef double norm(Point p):
+cpdef inline double norm(Point p):
     return (p.x**2+p.y**2)**0.5
 

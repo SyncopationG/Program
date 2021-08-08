@@ -940,7 +940,7 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 /* Module declarations from 'cylib.particle' */
 static PyTypeObject *__pyx_ptype_5cylib_8particle_Point = 0;
-static double __pyx_f_5cylib_8particle_norm(struct __pyx_obj_5cylib_8particle_Point *, int __pyx_skip_dispatch); /*proto*/
+static CYTHON_INLINE double __pyx_f_5cylib_8particle_norm(struct __pyx_obj_5cylib_8particle_Point *, int __pyx_skip_dispatch); /*proto*/
 static PyObject *__pyx_f_5cylib_8particle___pyx_unpickle_Point__set_state(struct __pyx_obj_5cylib_8particle_Point *, PyObject *); /*proto*/
 #define __Pyx_MODULE_NAME "cylib.particle"
 int __pyx_module_is_main_cylib__particle = 0;
@@ -1102,7 +1102,7 @@ static int __pyx_pf_5cylib_8particle_5Point___init__(struct __pyx_obj_5cylib_8pa
  *         self.x = x
  *         self.y = y             # <<<<<<<<<<<<<<
  * 
- * cpdef double norm(Point p):
+ * cpdef inline double norm(Point p):
  */
   __pyx_v_self->y = __pyx_v_y;
 
@@ -1567,20 +1567,20 @@ static PyObject *__pyx_pf_5cylib_8particle_5Point_4__setstate_cython__(struct __
 /* "cylib/particle.pyx":8
  *         self.y = y
  * 
- * cpdef double norm(Point p):             # <<<<<<<<<<<<<<
+ * cpdef inline double norm(Point p):             # <<<<<<<<<<<<<<
  *     return (p.x**2+p.y**2)**0.5
  * 
  */
 
 static PyObject *__pyx_pw_5cylib_8particle_1norm(PyObject *__pyx_self, PyObject *__pyx_v_p); /*proto*/
-static double __pyx_f_5cylib_8particle_norm(struct __pyx_obj_5cylib_8particle_Point *__pyx_v_p, CYTHON_UNUSED int __pyx_skip_dispatch) {
+static CYTHON_INLINE double __pyx_f_5cylib_8particle_norm(struct __pyx_obj_5cylib_8particle_Point *__pyx_v_p, CYTHON_UNUSED int __pyx_skip_dispatch) {
   double __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("norm", 0);
 
   /* "cylib/particle.pyx":9
  * 
- * cpdef double norm(Point p):
+ * cpdef inline double norm(Point p):
  *     return (p.x**2+p.y**2)**0.5             # <<<<<<<<<<<<<<
  * 
  */
@@ -1590,7 +1590,7 @@ static double __pyx_f_5cylib_8particle_norm(struct __pyx_obj_5cylib_8particle_Po
   /* "cylib/particle.pyx":8
  *         self.y = y
  * 
- * cpdef double norm(Point p):             # <<<<<<<<<<<<<<
+ * cpdef inline double norm(Point p):             # <<<<<<<<<<<<<<
  *     return (p.x**2+p.y**2)**0.5
  * 
  */
